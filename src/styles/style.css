@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+body {
+  background-color: #f0f0d8;
+}
+
+.container {
+  margin: 2rem 5rem;
+  border: 2px solid #000;
+  background-color: #ffffefba;
+  border-radius: 50px;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  font: 700 1.85rem Poppins;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-position: center;
+  border: 2px solid #000;
+}
+
+.paragraph {
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  text-align: justify;
+  align-self: center;
+  word-spacing: 5px;
+  line-height: 28px;
+}
+
+.link-github {
+  text-decoration: none;
+}
+
+.link-github:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container > p {
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.title-list {
+  font: 700 1.25rem Poppins;
+}
+
+.list-content > li {
+  margin-left: 2rem;
+  font-style: italic;
+  list-style-type: disc;
+}
+
+.list-content-ul > li {
+  list-style-type: decimal;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-style: normal;
+}
+
+.github::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../image/github.svg") no-repeat center;
+  background-size: contain;
+}
+
+.linkedin::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../image/linkedin.svg") no-repeat center;
+  background-size: contain;
+}
+
+.info-copyright {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-align: end;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 2rem 2.5rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .img-container {
+    justify-self: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .lists {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    margin: 1rem 1rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .paragraph {
+    padding: 0.5rem;
+    font-size: 0.925rem;
+  }
+
+  .title-list {
+    font: 700 1rem Poppins;
+  }
+
+  main {
+    margin: 1rem 0;
+    gap: 1rem;
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .list-content > li {
+    font-size: 0.925rem;
+  }
+
+  .info-copyright {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
